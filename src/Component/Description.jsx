@@ -10,7 +10,7 @@ function handleButtonClick() {
     console.log(props.selected)
 
     return (
-        <div className="core" 
+        <div className="core" id="glossaryItem"
         style={props.selected === props.name ? {backgroundColor : "rgb(201, 100, 100)"} : {backgroundColor : "white"}}>
             <h2 onClick={handleButtonClick}>{props.name}</h2>
         </div>
