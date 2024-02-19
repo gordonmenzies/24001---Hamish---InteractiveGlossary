@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+header {
+  background-color: rgb(75, 75, 75);
+  display: flex;
+  color: white;
+  font-size: 12px;
+}
+
+#nav_menu {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+.navbar {
+  display: flex;
+  width: 150px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar:hover {
+  background-color: rgb(145, 35, 138);
+}
+
+#pink {
+  display: flex;
+  background-color: rgb(145, 35, 138);
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+#outer {
+  display: flex;
+}
+
+.column {
+  width: 50%;
+}
