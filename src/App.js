@@ -10,10 +10,10 @@ function App() {
     new ProgrammingConcept("variable",
     "a piece of code that points to stored data",
     "variables are a core part of programming and are used to name information so it can be used in a legible fashion",
-    "EXAMPLE URL"),
+    "https://scaler.com/topics/images/python-variables-1024x483.webp"),
     new ProgrammingConcept('React', "A framework for building applications built by engineers at facebook",
     "The React framework is one of the most popular frameworks and builds using componenets that are tied together with specific tools used to build react apps",
-    "Example URL")
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png")
 ])
   const [visibleItem, setVisibleItem] = useState([item[0]])
 
@@ -25,8 +25,6 @@ function buttonPress(conceptName) {
     }
     i++
   }
-
-  console.log(visibleItem.name)
 }
 
   return (
@@ -49,15 +47,14 @@ function buttonPress(conceptName) {
       </header>
       <body>
         <div id="outer">
-          <div className="column">
-          <h1> Name of Variable</h1>
+          <div className="column" id="glossary">
           {item.map(concept => (
             <Description name={concept.name}
-            onChange={buttonPress}/>
+            onChange={buttonPress}
+            selected={visibleItem.name}/>
             ))}
           </div>
-          <div className="column">
-          <h1>Description of how it works</h1>
+          <div className="column" id="description">
             <ProgrammingConcepts 
             header={visibleItem.header}
             paragraph={visibleItem.paragraph}

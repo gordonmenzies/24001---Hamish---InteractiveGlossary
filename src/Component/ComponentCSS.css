@@ -1,4 +1,23 @@
-#core {
+.core {
     background-color: rgb(201, 100, 100);
     border: solid white 2px;
+    border-radius: 5px;
 }
+
+#glossary {
+    width: 20%;
+}
+
+#description {
+    text-align:right;
+    width: 99.5%;
+}
+
+#description h2 {
+    margin-right: 10px;
+}
+
+#description img {
+    margin-right: 30px;
+}
+

@@ -7,8 +7,11 @@ function handleButtonClick() {
     props.onChange(props.name)
 }
 
+    console.log(props.selected)
+
     return (
-        <div id="core">
+        <div className="core" 
+        style={props.selected === props.name ? {backgroundColor : "rgb(201, 100, 100)"} : {backgroundColor : "white"}}>
             <h2 onClick={handleButtonClick}>{props.name}</h2>
         </div>
         
