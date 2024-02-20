@@ -1,11 +1,20 @@
 import './ComponentCSS.css'
 import Quiz from './Quiz';
+import { useState } from 'react';
 
 
 function ProgrammingConcepts(props) {
 
-    
     const answers = [props.header,"Jeremy","Bonnie","Tom"]
+
+    function quizPress(e) {
+        if (e === props.header) {
+            alert("congratulations you guessed correctly")
+        }
+        else {
+            alert("unfortunately you guessed incorrectly")
+        }
+    }
 
     if (!props.header) {
         return (
@@ -23,7 +32,8 @@ function ProgrammingConcepts(props) {
             </div>
             <div id="quiz">
                 <Quiz q="question"
-                      answers={answers}/>
+                      answers={answers}
+                      onChange={quizPress}/>
             </div>
         </div>
     );
