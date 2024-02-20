@@ -3,7 +3,17 @@ import Quiz from './Quiz';
 
 
 function ProgrammingConcepts(props) {
-    const answers = ["Brian","Jeremy","Bonnie","Tom"]
+
+    
+    const answers = [props.header,"Jeremy","Bonnie","Tom"]
+
+    if (!props.header) {
+        return (
+            <div className="core">
+            </div>
+        )
+    }
+    else {
     return (
         <div className="core">
             <div id="information">
@@ -18,5 +28,6 @@ function ProgrammingConcepts(props) {
         </div>
     );
   }
+}
 
   export default ProgrammingConcepts;

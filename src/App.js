@@ -39,7 +39,7 @@ function buttonPress(conceptName) {
     <div className="App">
       <header className="App-header">
       <div id="pink">
-            <h1 id="link"> Iungo Glossary</h1>
+            <h1 id="link"> iungo glossary</h1>
         </div>
         <div id="nav_menu">
             <div className="navbar" id="link1"> 
