@@ -1,3 +1,10 @@
+/*
+        MISSING FUNCTIONALITY 
+                - QUIZ QUESTIONS COULD BE MULTIPLE AND MORE REFINED 
+                - BETTER FORMATTING ON THE DESCRIPTION OF GLOSSARY ITEMS
+*/
+
+
 import './App.css';
 import Description from './Component/Description';
 import ProgrammingConcepts from './Component/ProgrammingConcepts';
@@ -18,12 +25,17 @@ function App() {
     new ProgrammingConcept('API',"An Application Programme Interface, these are essential tool used by web develops",
     "API's allow programmers to securely access information stored remotely in different locations, as well as providing methodoly and instruction regrading how to access data",
     'https://voyager.postman.com/illustration/diagram-what-is-an-api-postman-illustration.svg'),
-    new ProgrammingConcept('JSX',"Javascript Extended, a variation of javascript that is used for manipulating the DOM when using certain frameworks",
+    new ProgrammingConcept('JSX',"a variation of javascript that is used for manipulating the DOM when using certain frameworks",
     'You will often find this languge used in the react framework, JSX files use curly braces in order to inject certain information into html',
     'https://miro.medium.com/v2/resize:fit:1400/1*LBg0Rq4CNkB0nq-aRlmdig.png')
 ])
   const [visibleItem, setVisibleItem] = useState([item[0]])
   const answers = ["Brian","Jim","John","Peter"]
+
+
+/*
+  Set the visible item that is chosen from Description Component to set the item who's information is diplayed.
+*/
 
 function buttonPress(conceptName) {
   let i = 0
@@ -39,7 +51,7 @@ function buttonPress(conceptName) {
     <div className="App">
       <header className="App-header">
       <div id="pink">
-            <h1 id="link"> iungo glossary</h1>
+            <h1 id="link"> Iungo Glossary</h1>
         </div>
         <div id="nav_menu">
             <div className="navbar" id="link1"> 
@@ -66,7 +78,8 @@ function buttonPress(conceptName) {
             <ProgrammingConcepts 
             header={visibleItem.header}
             paragraph={visibleItem.paragraph}
-            photo={visibleItem.photo}/>
+            photo={visibleItem.photo}
+            name={visibleItem.name}/>
           </div>
         </div>
       </body>

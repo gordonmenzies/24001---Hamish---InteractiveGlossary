@@ -1,24 +1,19 @@
 .core {
     background-color: white;
-    border: solid white 2px;
-    border-radius: 5px;
     display: flex;
 }
 
 #information {
     width: 60%;
     font-size: 12px;
-    border-radius: 5px;
-    border: solid 2px rgb(201, 100, 100);
-    background-color: rgb(198, 198, 198);
-    margin-left: 40px;
+    background-color: rgb(188, 188, 188);
 }
 
 #information h2 {
     margin-top: 30px;
     width: 80%;
-    margin-left: 10px;
-    margin-right: 140px;
+    margin-left: 40px;
+    margin-right: 50px;
     color: black;
     float: right;
     text-align: right;
@@ -26,18 +21,20 @@
 
 #information img {
     float: right;
-    margin-right: 140px;
+    margin-right: 50px;
     margin-bottom: 20px;
 }
 
 #quiz {
-    margin: auto;
-    border-radius: 5px;
-    width:30%;
+    width: 420px;
 }
 
 #glossaryItem h2 {
     margin-left: 35%;
+}
+
+#glossaryItem:hover {
+    cursor:default;
 }
 
 
@@ -47,10 +44,9 @@
 */
 
 .Question {
-    background-color: rgb(198, 198, 198);
+    background-color: rgb(188, 188, 188);
     color: black;
-    border-radius: 10px;
-    border: solid 2px rgb(201, 100, 100);
+    height: 100%;
 }
 
 #answers {
@@ -63,6 +59,8 @@
 h3 {
     font-size: 15px;
     cursor: default;
+    margin-top: 0px;
+    padding-top: 20px;
 }
 
 h4 {
@@ -73,7 +71,6 @@ h4 {
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 10px;
     max-width: 300px;
 }
 
